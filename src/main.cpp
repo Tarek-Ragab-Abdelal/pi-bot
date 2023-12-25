@@ -1,12 +1,15 @@
 #include "defines.h"
+
+// Redefine the volatage level as measured before the game
+#ifdef BATTERIES_VOLTAGE
+#undef BATTERIES_VOLTAGE
+#define BATTERIES_VOLTAGE 9.5
+#endif
+
 #include "pingSensors.h"
 #include "motionShield.h"
 
 bool left = false;
-long timer = 0;
-long interval = 5000;
-
-#define BATTERIES_VOLTAGE 9.5
 
 void setup()
 {
@@ -14,11 +17,9 @@ void setup()
 }
 void loop()
 {
-  if (millis() >= interval)
-  {
-    left = true;
-  }
-  detectWalls();
-  manualControl(left);
+  ping_detectWalls();
+
+  manualControl(left); // Work as RIGHT WALL FOLLOWER
+
   //  PID_fullControl();
 }
