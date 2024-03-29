@@ -72,3 +72,10 @@ The Wall Follower algorithm is a popular maze-solving algorithm used by autonomo
 - Goal Reached: The robot continues following the wall until it reaches the exit or the designated goal point of the maze. The algorithm ensures that the robot systematically explores the entire maze while maintaining a connection with the wall.
 
 The Wall Follower algorithm guarantees that the robot will eventually find the exit in a simply-connected maze with no loops. However, in complex mazes with loops or disconnected paths, the robot may not find a solution. In such cases, additional algorithms or modifications are required.
+
+
+
+### Support Me
+
+<p style="display: inline-block; margin-right: 0.25rem;"><a style="padding: 10px;" href="https://www.buymeacoffee.com/tarekragab"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="150"/></a>
+<a style="padding: 10px;" href="https://www.ko-fi.com/tarekragab"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="150"/></a></p>
